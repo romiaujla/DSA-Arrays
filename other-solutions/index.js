@@ -5,6 +5,7 @@ const { mergeArrays } = require('./MergeArrays');
 const { removeCharacters } = require('./RemoveCharacters');
 const { products } = require('./Products');
 const { twoDArray } = require('./2DArray');
+const { isRotatedString } = require('./StringRotation');
 
 function main() {
 
@@ -63,6 +64,14 @@ function main() {
   ];
   console.log(`Input:\n`, arr);
   console.log(`Output:\n`, twoDArray(arr));
+
+  console.log(`\n\nSTRING ROTATION SOLUTION`);
+  console.log(`---------------------------------------------`);
+  console.log(`Input: amazon, azonma`);
+  console.log(`Output: ${isRotatedString(`amazon`, `azonma`)}`);
+  console.log(`Input: amazon, azonam`);
+  console.log(`Output: ${isRotatedString(`amazon`, `azonam`)}`);
+
 }
 
 main();
